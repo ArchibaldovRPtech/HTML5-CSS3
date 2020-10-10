@@ -24,7 +24,7 @@
 }
 
 .header__title {
-    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.3);
+    /* box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.3); */
     font-family: ArialMT;
     font-size: 60px;
     line-height: 1.2;
@@ -35,7 +35,7 @@
 
 .header__list {
     padding-left: 33px;
-    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.3);
+    /* box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.3); */
     font-family: ArialMT;
     font-size: 20px;
     line-height: 36px;
