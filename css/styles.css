@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
+@font-face {
+    font-family: 'ArialMT';
+    src: url('../fonts/ArialMT.woff2') format('woff2'),
+        url('../fonts/ArialMT.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -13,6 +20,18 @@
 .padding-site {
     padding: 50px;
     box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #ebebeb;  
+}
+
+.button:focus {
+    color: #7b5af1;
+}
+
+.button:active {
+    background-color: #f2f701;
 }
 
 .header {
@@ -305,4 +324,160 @@
     line-height: 18px;
     font-weight: 700;
     color: #445161;       
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #445161;
+    padding-top: 50px;
+    
+}
+
+.footer__title {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: ArialMT;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 245px;
+    width: 500px;
+    margin-right: 50px;   
+}
+
+.footer-form__input {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;  
+}
+
+.footer-form__input:focus {
+    background-color: #8ff19f;
+}
+
+.footer-form__textarea {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+    resize: none; 
+}
+
+.footer-form__btn {
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
+    text-transform: uppercase;
+}
+
+.footer-social {
+    width: 240px;
+    height: 241px;
+    padding-left: 50px;
+    /* background-color: #fff; */
+}
+
+.social-link {
+    display: block;
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    text-decoration-line: underline;
+}
+
+
+
+.social-link:first-child::before   {
+    content: "";
+    position: absolute;
+    background-image: url(../img/skype_icon.png);
+    width: 25px;
+    height: 26px;
+    left: -30px;
+    background-size: cover;
+}
+
+.social-link:nth-child(2)::before   {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icq_icon.png);
+    width: 25px;
+    height: 25px;
+    left: -30px;
+    background-size: cover;
+}
+
+.social-link:nth-child(3)::before   {
+    content: "";
+    position: absolute;
+    background-image: url(../img/email_icon.png);
+    width: 25px;
+    height: 25px;
+    left: -30px;
+    background-size: cover;
+}
+
+.social-link:nth-child(4)::before   {
+    content: "";
+    position: absolute;
+    background-image: url(../img/phone_icon.png);
+    width: 25px;
+    height: 25px;
+    left: -30px;
+    background-size: cover;
+}
+
+.social-icons {
+    width: 240px;
+    height: 42px;
+    color: #ffffff;
+}
+
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    font-family: ArialMT;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #445162;
+    background-color: #fff;
 }
